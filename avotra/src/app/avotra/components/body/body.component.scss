@@ -1,0 +1,29 @@
+.titre {
+    color: white;
+    text-shadow: 1px 1px 1.5px white;
+}
+
+.menu {
+    // background: white;
+    border-radius: .5rem;
+    padding: 0% !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.117),
+        0 -0.5rem 1rem rgba(0, 0, 0, 0.115) !important;
+    transition: all .3s ease;
+}
+
+.menuItem {
+    cursor: pointer;
+    color: white !important;
+    text-shadow: .5px .5px .5px white !important;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.activeMenu {
+    background: white;
+    color: #0d6efd !important;
+    text-shadow: .5px .5px .5px #0d6efd !important;
+    border-radius: .5rem;
+    transition: all .5s ease;
+}

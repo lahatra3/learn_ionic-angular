@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/fonts/SourceSansPro-Regular.ttf');
+}
+
+*, *::after, *::before {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #0d6efd;
+    box-sizing: border-box;
+}

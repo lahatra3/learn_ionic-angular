@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AvotraModule } from './avotra/avotra.module';
 
 @NgModule({
   declarations: [
@@ -11,8 +10,7 @@ import { AvotraModule } from './avotra/avotra.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AvotraModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
