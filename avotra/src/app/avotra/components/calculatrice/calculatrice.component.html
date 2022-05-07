@@ -1,3 +1,81 @@
-<div class="col-md-6 col-12">
-    <div class="fs-3">Calculateur</div>
+<div class="col-md-6 col-12 shadow sectionCalculateur mt-4 pb-2 mb-2 align-self-center">
+    <div class="affichage">
+        <div class="text-end fw-bold entree p-2">{{ input }}</div>
+        <div class="text-end fw-bold resultat p-2 pt-4"
+            [style.color]="output === 'Erreur'? '#dc3545': '#198754'">{{ output }}</div>
+    </div>
+    <div class="row row-cols-2 g-0 mt-2 ms-1 me-1">
+        <div class="col">
+            <div class="card">
+                <button class="btn pt-2 pb-2 shadow" type="button" (click)="onReset()">
+                    <i class="fa-solid fa-c text-secondary fs-4"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <button class="btn pt-2 pb-2 shadow" (click)="onDelete()" type="button">
+                    <i class="fa-solid fa-delete-left text-secondary fs-4"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- ========================================================================================= -->
+    <div class="row row-cols-4 g-0 ms-1 me-1">
+        <div class="col" *ngFor="let data of operateurs">
+            <div class="card">
+                <button class="btn pt-2 pb-2 shadow" (click)="onGetValue(data.sign)" type="button">
+                    <i [class]="data.icon" class="fs-3 text-primary"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- ========================================================================================= -->
+    <div class="row row-cols-3 g-0 ms-1 me-1">
+        <div *ngFor="let line of firstLine" class="col">
+            <div class="card">
+                <button class="btn shadow" (click)="onGetValue(line)"
+                    type="button">
+                    <span class="fs-3 fw-bold">{{ line }}</span>
+                </button>
+            </div>
+        </div>
+        <div *ngFor=" let line of secondLine" class="col">
+            <div class="card">
+                <button class="btn shadow" (click)="onGetValue(line)"
+                    type="button">
+                    <span class="fs-3 fw-bold">{{ line }}</span>
+                </button>
+            </div>
+        </div>
+        <div *ngFor="let line of thirdLine" class="col">
+            <div class="card">
+                <button class="btn shadow" (click)="onGetValue(line)"
+                    type="button">
+                    <span class="fs-3 fw-bold">{{ line }}</span>
+                </button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <button class="btn shadow pt-2 pb-2" (click)="onGetValue(0)" type="button">
+                    <span class="fs-3 fw-bold">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <button class="btn shadow pt-2 pb-2" (click)="onGetValue('.')" type="button">
+                    <span class="fs-3 fw-bold">,</span>
+                </button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <button class="btn shadow pt-2 pb-2" (click)="onGetResult()" type="button">
+                    <span class="fs-3"><i class="fa-solid fa-equals text-primary"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>

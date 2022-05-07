@@ -1,0 +1,35 @@
+.sectionCalculateur {
+    background: white;
+    border-radius: 1rem;
+}
+
+.affichage {
+    background: rgb(231, 232, 233);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 25vh;
+}
+
+.entree {
+    font-size: 1.7rem;
+    white-space: nowrap !important;
+    overflow: scroll !important;
+}
+
+.resultat {
+    font-size: 2.5rem;
+    white-space: nowrap !important;
+    overflow: scroll !important;
+}
+
+.card, .btn {
+    transition: all .5s ease !important;
+}
+
+.card:hover {
+    scale: 1.02;
+    .btn {
+        box-shadow: .5px .5px .5px #0d6efd,
+        .5px -.5px .5px #0d6efd !important;
+    }
+}
