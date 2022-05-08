@@ -1,0 +1,6 @@
+{
+	"appId": "com.avotra.angular",
+	"appName": "avotra",
+	"webDir": "dist/avotra",
+	"bundledWebRuntime": false
+}

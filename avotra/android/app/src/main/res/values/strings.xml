@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">avotra</string>
+    <string name="title_activity_main">avotra</string>
+    <string name="package_name">com.avotra.angular</string>
+    <string name="custom_url_scheme">com.avotra.angular</string>
+</resources>
